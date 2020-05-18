@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center">LAB HTML</h1>
+    <h3 style="text-align: right">นันทยา ศาสตร์พงษ์ CodeCamp6</h3>
+    <h3 style="text-align: right">Email: aum.nanthaya@gmail.com</h3>
+    <table border=1px bordercolor=#FF6600 style="width: 100%">
+        <h1>Attribute</h1>
+
+        <tr style="background-color:pink">
+            <th>Tag</th>
+            <th>Attribute</th>
+            <th>Sample</th>
+            <th>Output</th>
+        </tr>
+
+        <tr>
+            <td>&lt;h&gt;</td>
+            <td>style</td>
+            <td>&lt;h1 style="color:red">This is heading&lt;/h1&gt;</td>
+            <td>
+                <h1 style="color:red;">This is heading</h1>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;p&gt;</td>
+            <td>style</td>
+            <td>&lt;p style="text-align:right"&gt;This is paragraph.&lt;/p&gt;</td>
+            <td>
+                <p style="text-align:right">This is paragraph.</p>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;div&gt;</td>
+            <td>style</td>
+            <td>&lt;div style="text-align:center"&gt;DIV CENTER&lt;/div&gt;</td>
+            <td>
+                <div style="text-align:center">DIV CENTER</div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;img&gt;</td>
+            <td>src, alt, style</td>
+            <td>&lt;img src="Mario3.png" alt="Mario" height="50" width="50"&gt;</td>
+            <td><img src="Mario3.png" alt="Mario" height="50" width="50"></td>
+        </tr>
+
+        <tr>
+            <td>&lt;a&gt;</td>
+            <td>href, target, style</td>
+            <td>&lt;a href="https://www.google.co.th" target="_blank" style="color:#FF6600">Click Google&lt;/a&gt;</td>
+            <td><a href="https://www.google.co.th" target="_blank" style="color:#FF6600">Click Google</a></td>
+        </tr>
+
+        <tr>
+            <td>&lt;ul&gt;</td>
+            <td>style</td>
+            <td>&lt;ul
+                style="list-style-type:square">&lt;li>Apple&lt;/li>&lt;li>Banana&lt;/li>&lt;li>Orange&lt;/li>&lt;/ul>
+            </td>
+            <td>
+                <ul style="list-style-type:square">
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Orange</li>
+                </ul>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;ol&gt;</td>
+            <td>style</td>
+            <td>&lt;ol style="line-height:150%">&lt;li>Orange&lt;/li>&lt;li>Pink&lt;/li>&lt;li>Green&lt;/li>&lt;/ol>
+            </td>
+            <td>
+                <ol style="line-height:150%">
+                    <li>Orange</li>
+                    <li>Pink</li>
+                    <li>Green</li>
+                </ol>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;table&gt;</td>
+            <td>style</td>
+            <td>&lt;table border="1" bordercolor=#FFFFFF style="background-color:rgb(36, 196, 218)"><br>
+                &lt;tr>&lt;td>Name:&lt;/td>&lt;td>NANTHAYA&lt;/td>&lt;/tr><br>
+                &lt;tr>&lt;td>Surname:&lt;/td>&lt;td>SARTPONG&lt;/td>&lt;/tr><br>
+                &lt;/table></td>
+            <td>
+                <table border="1" bordercolor=#FFFFFF style="background-color:rgb(36, 196, 218)">
+                    <tr>
+                        <td>Name:</td>
+                        <td>NANTHAYA</td>
+                    </tr>
+                    <tr>
+                        <td>Surname:</td>
+                        <td>SARTPONG</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;form&gt;</td>
+            <td>style, text, submit</td>
+            <td>&lt;form style="background-color:red">Name: <br>
+                &lt;input type="text"><br>
+                &lt;input type="submit" value="Submit">&lt;/form>
+            </td>
+            <td>
+                <form style="background-color:red">Name: <input type="text"><input type="submit" value="Submit"></form>
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;button&gt;</td>
+            <td>style</td>
+            <td>&lt;button style="background-color:green">Green&lt;/button></td>
+            <td><button style="background-color:green">Green</button></td>
+        </tr>
+    </table>
+
+    <table border=1px bordercolor=#FF6600 style="width: 100%">
+        <h1>Differentiation Tag</h1>
+
+        <tr style="background-color:pink">
+            <th>Tag</th>
+            <th>Same</th>
+            <th>Different</th>
+        </tr>
+
+        <tr>
+            <td>&lt;hr> & &lt;br></td>
+            <td>ขึ้นบรรทัดใหม่</td>
+            <td>hr จะมีขีดเส้นบรรทัด</td>
+        </tr>
+
+        <tr>
+            <td>&lt;ul> & &lt;ol></td>
+            <td>แบ่งเป็นข้อๆ</td>
+            <td>ul จะเป็นแบบสัญลักษณ์ แต่ ol จะเป็นลำดับเลข</td>
+        </tr>
+
+        <tr>
+            <td>&lt;select> & &lt;checkbox> & &lt;radio button></td>
+            <td>กำหนดข้อมูลให้เลือก</td>
+            <td>select จะเป็นแบบ ComboBox ให้เลือกได้อย่างใดอย่างหนึ่ง <br>
+                checkbox สามารถเลือกข้อมูลได้มากกว่า 1 <br>
+                radio button สามารถติ๊กเลือกข้อมูลได้อย่างใดอย่างหนึ่ง
+            </td>
+        </tr>
+
+        <tr>
+            <td>&lt;div> & &lt;span></td>
+            <td>กำหนดเป็นข้อความ</td>
+            <td>div จะกำหนด style ทั้งข้อความ แต่ span จะกำหนดเป็นคำๆได้</td>
+        </tr>
+
+        <tr>
+            <td>&lt;script> & &lt;style></td>
+            <td>สามารถเขียนให้อยู่ใน body และ เขียนบนฝั่ง Client</td>
+            <td>script เรียกผ่าน function</td>
+        </tr>
+
+    </table>
+
+    <table border=1px bordercolor=#FF6600 style="width: 100%">
+        <h1>Input Type</h1>
+
+        <tr style="background-color:pink">
+            <th>Tag</th>
+            <th>Detail</th>
+            <th>Show</th>
+        </tr>
+
+        <tr>
+            <td>button</td>
+            <td>สำหรับใส่ปุ่มกด</td>
+            <td><input type="button" value="button"></td>
+        </tr>
+
+        <tr>
+            <td>checkbox</td>
+            <td>สำหรับใส่ CheckBox</td>
+            <td><input type="checkbox"></td>
+        </tr>
+
+        <tr>
+            <td>color</td>
+            <td>สำหรับเลือกสี</td>
+            <td><input type="color"></td>
+        </tr>
+
+        <tr>
+            <td>date</td>
+            <td>สำหรับใส่วัน เดือน ปี</td>
+            <td><input type="date"></td>
+        </tr>
+
+        <tr>
+            <td>datetime-local</td>
+            <td>สำหรับแสดงวัน-เวลา</td>
+            <td><input type="datetime-local"></td>
+        </tr>
+
+        <tr>
+            <td>email</td>
+            <td>สำหรับใส่ Email</td>
+            <td><input type="email"></td>
+        </tr>
+
+        <tr>
+            <td>file</td>
+            <td>สำหรับเลือกไฟล์</td>
+            <td><input type="file"></td>
+        </tr>
+
+        <tr>
+            <td>hidden</td>
+            <td>สำหรับซ่อนข้อมูล</td>
+            <td><input type="hidden"></td>
+        </tr>
+
+        <tr>
+            <td>image</td>
+            <td>สำหรับใส่รูปภาพ</td>
+            <td><input type="image" src="Mario3.png" height="30" width="30"></td>
+        </tr>
+
+        <tr>
+            <td>month</td>
+            <td>สำหรับเลือกเดือนตามปี</td>
+            <td><input type="month"></td>
+        </tr>
+
+        <tr>
+            <td>number</td>
+            <td>สำหรับใส่ตัวเลข</td>
+            <td><input type="number"></td>
+        </tr>
+
+        <tr>
+            <td>password</td>
+            <td>สำหรับใส่รหัสผ่าน</td>
+            <td><input type="password"></td>
+        </tr>
+
+        <tr>
+            <td>radio</td>
+            <td>สำหรับใส่ตัวเลือก</td>
+            <td><input type="radio"></td>
+        </tr>
+
+        <tr>
+            <td>range</td>
+            <td>สำหรับใส่ช่วง</td>
+            <td><input type="range"></td>
+        </tr>
+
+        <tr>
+            <td>reset</td>
+            <td>สำหรับใส่ปุ่ม Reset</td>
+            <td><input type="reset"></td>
+        </tr>
+
+        <tr>
+            <td>search</td>
+            <td>สำหรับใส่ข้อมูลการหาข้อมูล</td>
+            <td><input type="search"></td>
+        </tr>
+
+        <tr>
+            <td>submit</td>
+            <td>สำหรับใส่ปุ่ม Submit</td>
+            <td><input type="submit"></td>
+        </tr>
+
+        <tr>
+            <td>tel</td>
+            <td>สำหรับใส่เบอร์โทรศํพท์</td>
+            <td><input type="tel"></td>
+        </tr>
+
+        <tr>
+            <td>text</td>
+            <td>สำหรับใส่ข้อความ</td>
+            <td><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td>time</td>
+            <td>สำหรับใส่เวลา</td>
+            <td><input type="time"></td>
+        </tr>
+
+        <tr>
+            <td>url</td>
+            <td>สำหรับใส่ลิงค์</td>
+            <td><input type="url"></td>
+        </tr>
+
+        <tr>
+            <td>week</td>
+            <td>สำหรับใส่ข้อมูล Week ของเดือน</td>
+            <td><input type="week"></td>
+        </tr>
+    </table>
+
+    <table border=1px bordercolor=#FF6600 style="width: 100%">
+        <h1>Lab เสริม</h1>
+
+        <tr style="background-color:pink">
+            <th>Tag</th>
+            <th>Detail</th>
+            <th>Show</th>
+        </tr>
+
+        <tr>
+            <td>&lt;strong>&lt;/strong></td>
+            <td>สำหรับเน้นข้อความ แสดงเป็นตัวหนา</td>
+            <td><p>Lorem: <strong>ipsum dolor sit</strong></p></td>
+        </tr>
+
+        <tr>
+            <td>&lt;label>&lt;/label></td>
+            <td>สำหรับแสดงฉลาก</td>
+            <td><p>Lorem: <label>amet consectetur adipisicing</label></p></td>
+        </tr>
+
+        <tr>
+            <td>&lt;del>&lt;/del></td>
+            <td>สำหรับขีดฆ่าข้อความ</td>
+            <td><p>Lorem: <del>Natus adipisci corrupti</del></p></td>
+        </tr>
+
+        <tr>
+            <td>&lt;b>&lt;/b></td>
+            <td>สำหรับกำหนดตัวหนา</td>
+            <td><p>Lorem: <b>ipsum dolor sit amet</b></p></td>
+        </tr>
+
+        <tr>
+            <td>&lt;em>&lt;/em></td>
+            <td>สำหรับกำหนดเป็นตัวเน้น</td>
+            <td><p>Lorem: <em>consectetur adipisicing elit.</em></p></td>
+        </tr>
+
+        <tr>
+            <td>&lt;mark>&lt;/mark></td>
+            <td>สำหรับไฮไลท์ข้อความ</td>
+            <td><p>Lorem: <mark>Mollitia, est nisi, numquam</mark></p></td>
+        </tr>
+
+        <tr>
+            <td>&lt;i>&lt;/i></td>
+            <td>สำหรับกำหนดตัวเอียง</td>
+            <td><p>Lorem: <i>ea sint tenetur natus dolorum</i></p></td>
+        </tr>
+
+        <tr>
+            <td>&lt;sub>&lt;/sub></td>
+            <td>สำหรับกำหนดเป็นตัวห้อย</td>
+            <td><p>Lorem: <sub>molestiae totam minus</sub></p></td>
+        </tr>
+
+        <tr>
+            <td>&lt;sup>&lt;/sup></td>
+            <td>สำหรับกำหนดเป็นตัวยก</td>
+            <td><p>Lorem: <sup>hic nihil, excepturi</sup></p></td>
+        </tr>
+    </table>
+
+</html>
