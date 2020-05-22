@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    /* table */
+    table {
+        border-collapse: collapse;
+        border-color: #000000;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid black;
+        height: 50px;
+    }
+
+    /* tooltip */
+    .tooltip {
+        position: relative;
+        display: inline-block;
+        border-bottom: 1px dotted black;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #FF6600;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        top: -5px;
+        right: 110%;
+    }
+
+    .tooltip .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        margin-top: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: transparent black;
+    }
+
+    .tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+
+    /* pagination */
+
+    .center {
+        text-align: center;
+    }
+
+    .pagination {
+        display: inline-block;
+    }
+
+    .pagination a {
+        color: black;
+        float: left;
+        padding: 8px 14px;
+        text-decoration: none;
+        transition: background-color .3s;
+        border: 1px solid #ddd;
+        margin: 0 4px;
+        font-size: 12px;
+    }
+
+    .pagination a.active {
+        background-color: black;
+        color: white;
+        border: 1px solid black;
+    }
+
+    .pagination a:hover:not(.active) {
+        background-color: #FF6600;
+        color: white;
+    }
+
+    /* Navigation bar */
+
+    .topnav {
+        overflow: hidden;
+        background-color: white;
+    }
+
+    .topnav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 12px 14px;
+        text-decoration: none;
+        font-size: 12px;
+    }
+
+    .topnav a:hover {
+        background-color: black;
+        color: white;
+    }
+
+    .topnav a.active {
+        background-color: #FF6600;
+        color: white;
+    }
+
+    /* Dropdown */
+
+    .dropbtn {
+        background-color: rgb(27, 174, 211);
+        color: white;
+        padding: 12px;
+        font-size: 12px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        min-width: 100px;
+        box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 10px 10px;
+        text-decoration: none;
+        font-size: 12px;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #FF6600;
+        color: white;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+        background-color: rgb(165, 68, 4);
+        color: black;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="text-align: center">LAB CSS</h1>
+    <h3 style="text-align: right">นันทยา ศาสตร์พงษ์ CodeCamp6</h3>
+    <h3 style="text-align: right">Email: aum.nanthaya@gmail.com</h3>
+    <h4>LAB CSS: ให้หาว่าแต่ละอันคืออะไร และ ให้สร้างไฟล์ HTML ในการแสดงตัวอย่างของแต่ละอัน ส่งทาง git</h4>
+
+    <table>
+
+        <tr style="background-color:#FF6600">
+            <th>Item</th>
+            <th>Detail</th>
+            <th>Show</th>
+        </tr>
+
+        <tr>
+            <td>Tooltips</td>
+            <td>เป็นกล่องข้อความ สำหรับอธิบายรายละเอียดของข้อความ เป็นการซ้อนไว้ต้องนำเมาส์ไปชี้ถึงแสดงข้อความได้</td>
+            <td>
+                <div class="tooltip">Tooltip Here!!!
+                    <span class="tooltiptext">Please Check</span>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Pagination</td>
+            <td>การแบ่งหน้าแสดงข้อมูล</td>
+            <td>
+                <div class="center">
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">&raquo;</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Navigation bar</td>
+            <td>สำหรับจัดกลุ่มส่วนที่เป็นลิงค์ต่างๆ ไม่ว่าจะเป็นลิงค์ที่ไปยังไซต์อื่นๆ
+                หรือลิงค์ที่ใช้เชื่อมโยงภายในหน้าเว็บเพจ</td>
+            <td>
+                <div class="topnav">
+                    <a class="active" href="#home">HOME</a>
+                    <a href="#news">HTML</a>
+                    <a href="#contact">CSS</a>
+                    <a href="#about">OOP</a>
+                </div>
+            </td>
+        </tr>
+
+        <tr>
+            <td>Dropdown</td>
+            <td>เป็นปุ่มเมนูที่เมื่อใช้เมาส์กดแล้วจะมีรายการเรียงลงมาให้เลือก</td>
+            <td>
+                <div class="dropdown">
+                    <button class="dropbtn">DETAIL</button>
+                    <div class="dropdown-content">
+                        <a href="#">HTML</a>
+                        <a href="#">CSS</a>
+                        <a href="#">OOP</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
